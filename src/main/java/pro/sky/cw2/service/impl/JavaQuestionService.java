@@ -10,6 +10,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
+
 @Service
 public class JavaQuestionService implements QuestionService {
     private final Set<Question> questions;
@@ -22,7 +23,7 @@ public class JavaQuestionService implements QuestionService {
 
     @Override
     public Question add(String question, String answer) {
-        return add(new Question(question,answer));
+        return add(new Question(question, answer));
     }
 
     @Override

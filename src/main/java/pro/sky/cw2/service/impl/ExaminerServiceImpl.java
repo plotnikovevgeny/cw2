@@ -1,6 +1,7 @@
 package pro.sky.cw2.service.impl;
 
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import pro.sky.cw2.exception.BadAmountException;
 import pro.sky.cw2.model.Question;
 import pro.sky.cw2.service.ExaminerService;
@@ -11,6 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @AllArgsConstructor
+@Service
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService questionService;
 
